@@ -2,14 +2,18 @@ package com.nara.alarm;
 
 import android.app.Activity;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.nara.alarm.details.DetailRepeatDays;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -18,7 +22,7 @@ import java.util.Calendar;
  * Created by nara.yoon on 2017-09-10.
  */
 
-public class AlarmDetailView extends Activity {
+public class AlarmDetailView extends Activity implements ViewGroup.OnClickListener{
 
 
     TextView mTimeSet;
@@ -31,10 +35,17 @@ public class AlarmDetailView extends Activity {
     String hour;
     String minute;
 
+    ViewGroup repeatDaysLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alarm_detail_list_layout);
+
+        repeatDaysLayout = (ViewGroup)findViewById(R.id.detail_time_repeat_days_layout);
+        repeatDaysLayout.setOnClickListener(this);
+
+
         mCalendar = Calendar.getInstance();
 
         mTimePicker = (TimePicker) findViewById(R.id.time_picker);
@@ -72,4 +83,17 @@ public class AlarmDetailView extends Activity {
             minute = "0" + min;
     }
 
+    @Override
+    public void onClick(View view) {
+
+        int id = view.getId();
+
+        switch (id){
+            case R.id.detail_time_repeat_days_layout:
+                Intent intent = new Intent(this, DetailRepeatDays.class);
+                startActivity(intent);
+                break;
+        }
+
+    }
 }
