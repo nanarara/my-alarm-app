@@ -76,3 +76,9 @@ Thumbs.db
 ### AndroidStudio Patch ###
 
 !/gradle/wrapper/gradle-wrapper.jar
+
+gradle.properties
+gradlew
+gradlew.bat
+setting.gradle
+build.gradle
