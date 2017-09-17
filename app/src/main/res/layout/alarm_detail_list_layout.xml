@@ -22,4 +22,153 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark"/>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/detail_time_repeat_days_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="반복"/>
+
+        <ImageView
+            android:id="@+id/arrow1"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow1"
+            android:id="@+id/repeatDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월화수목금"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark"/>
+
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/detail_time_voca_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영어 단어장"/>
+
+        <ImageView
+            android:id="@+id/arrow2"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow2"
+            android:id="@+id/voca_list_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="토익"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark"/>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/detail_time_sound_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사운드"/>
+
+        <ImageView
+            android:id="@+id/arrow3"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow3"
+            android:id="@+id/sound_list_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="노래"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark"/>
+
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/detail_time_repeat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다시 알림"/>
+
+        <Switch
+            android:layout_centerVertical="true"
+            android:id="@+id/repeat_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textOff="Off"
+            android:textOn="On"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark"/>
+
 </LinearLayout>
